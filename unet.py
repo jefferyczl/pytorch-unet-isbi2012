@@ -73,10 +73,8 @@ class OutConv(nn.Module):
         else:
             return x
 class UNet(nn.Module):
-    def __init__(self,n_channels,n_classes,bilinear=False,isSigmoid=False,decoderFp=32,encoderFp=32):
+    def __init__(self,n_channels,n_classes,bilinear=False,isSigmoid=False):
         super(UNet,self).__init__()
-        self.decoderFp = decoderFp
-        self.encoderFp = encoderFp
         self.n_channels = n_channels
         self.n_classes = n_classes
         self.bilinear = bilinear
@@ -103,6 +101,7 @@ class UNet(nn.Module):
         x4 = self.dropout(x4)
         x5 = self.down4(x4)
         x5 = self.dropout(x5)
+
         x = self.up1(x5,x4)
         x = self.up2(x,x3)
         x = self.up3(x,x2)
