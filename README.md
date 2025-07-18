@@ -19,8 +19,7 @@ project/
 ├── model.py                  # UNet model definition module (supports precision switching)
 ├── train.py                  # Model training and validation module (core experiment script)
 ├── metrics.py                # Evaluation metric calculation module (accuracy, IoU, etc.)
-├── predict.py                # Model prediction and result visualization module
-└── utils.py                  # Auxiliary utility functions
+└── predict.py                # Model prediction and result visualization module
 ```
 
 ## 2. Deployment Process
