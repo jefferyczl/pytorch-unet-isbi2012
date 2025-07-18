@@ -16,6 +16,7 @@ project/
 ├── outputs/                  # Output directory
 │   └── unet_xxx.pth          # Model weight files generated during training
 ├── dataset.py                # Data loading and preprocessing module
+├── u_transforms.py           # Data augmentation function
 ├── model.py                  # UNet model definition module (supports precision switching)
 ├── train.py                  # Model training and validation module (core experiment script)
 ├── metrics.py                # Evaluation metric calculation module (accuracy, IoU, etc.)
