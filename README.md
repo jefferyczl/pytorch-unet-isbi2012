@@ -27,7 +27,7 @@ project/
 
 ### 2.1 Environment Requirements
 
-- **Hardware**: NVIDIA GPU (supporting CUDA, recommended RTX 3090 or higher, with FP16 computing capability)
+- **Hardware**: NVIDIA GPU (supporting CUDA, recommended RTX 3090 or higher)
 - **Operating System**: Ubuntu 20.04.6 LTS 64-bit
 - Software Dependencies:
   - Python 3.12.4
@@ -91,8 +91,6 @@ This project can experiments through the `train.py` script, with core configurat
 | `--lr`           | Learning rate                                     | e.g., 2e-3                |
 | `--loss_type`    | Loss function                                     | eg., binary_cross_entropy |
 | `--lr_policy     |                                                   | eg., CosineAnnealingLR    |
-| `--train_enc_fp` | Encoder training precision (overrides `train_fp`) | 32, 16                    |
-| `--train_dec_fp` | Decoder training precision (overrides `train_fp`) | 32, 16                    |
 
 #### Training command
 
